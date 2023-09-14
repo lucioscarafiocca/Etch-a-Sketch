@@ -17,7 +17,7 @@ function rowsInside (a) {
             const div = document.createElement("div")
             element.appendChild(div)
             div.classList.toggle("in") 
-            div.addEventListener("mouseover", () => div.classList.toggle("change"))
+            div.addEventListener("mouseover", () => {div.setAttribute("style",`background-color: ${colorsRandom()}`)} ,  {once: true})
     
         }
         
@@ -50,6 +50,18 @@ but.addEventListener("click", () => {
 })
 
 console.log(createDivs(10))
+
+function colorsRandom() {
+    let x = Math.round((Math.random() * 255 ))
+    let y = Math.round((Math.random() * 255 ))
+    let z = Math.round((Math.random() * 255 ))
+    let color = `rgb(${x},${y},${z})`
+    return color
+    
+
+}
+
+
 
 
 
