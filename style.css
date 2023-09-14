@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    max-height: 1000px;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+    flex-direction: column;
+    
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    max-height: 100px;
+    min-height: 0px;
+    
+    
+}
+
+.change {
+    background-color: black;
+}
+
+.but {
+    font-family: "roboto";
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    margin-bottom: 100px;
+}   
+
+.in {
+    height: 100px;
+    width: 100px;
+    min-height: 0px;
+    
+}
